@@ -1,0 +1,25 @@
+templateFilename: template.xlsx
+
+extractDetails:
+  - {
+    sourceFilename: LICENSE.txt,
+    keyColStart: 28,
+    key: Version,
+    valueRowOffset: 0,
+    valueColStart: 49,
+    valueColLength: 4,
+    templateSheet: 1,
+    templateRow: 3,
+    templateCol: 2
+  }
+  - {
+    sourceFilename: LICENSE.txt,
+    keyColStart: 4,
+    key: "Copyright 2000-2018 JetBrains",
+    valueRowOffset: 0,
+    valueColStart: 14,
+    valueColLength: 4,
+    templateSheet: 1,
+    templateRow: 3,
+    templateCol: 3
+  }

@@ -1,5 +1,5 @@
 #list of folders to process
 extractFolders:
-  - c:/extractsample/folder1/
-  - c:/extractsample/folder2/
-#  - c:/extractsample/folder3/
+  - C:\Projects\dataextractor\example\folder1\
+  - C:\Projects\dataextractor\example\folder1\
+#  - C:\Projects\dataextractor\example\folder1\
