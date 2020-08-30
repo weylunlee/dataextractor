@@ -73,4 +73,17 @@ public class ExtractDetailConfig {
     public void setTemplateCol(int templateCol) {
         this.templateCol = templateCol;
     }
+
+    @Override
+    public String toString() {
+        return "sourceFilename='" + sourceFilename + '\'' +
+                ", keyColStart=" + keyColStart +
+                ", key='" + key + '\'' +
+                ", valueRowOffset=" + valueRowOffset +
+                ", valueColStart=" + valueColStart +
+                ", valueColLength=" + valueColLength +
+                ", templateRow=" + templateRow +
+                ", templateCol=" + templateCol +
+                '}';
+    }
 }

@@ -1,4 +1,5 @@
-#list of db urls in form instance:server:port
+#list of folders to process
 extractFolders:
-  - c:/extractsample/folder1
-#  - c:/extractsample/folder2
+  - c:/extractsample/folder1/
+  - c:/extractsample/folder2/
+#  - c:/extractsample/folder3/

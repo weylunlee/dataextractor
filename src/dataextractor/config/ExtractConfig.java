@@ -32,4 +32,11 @@ public class ExtractConfig {
     public void setExtractDetails(List<ExtractDetailConfig> extractDetails) {
         this.extractDetails = extractDetails;
     }
+
+    @Override
+    public String toString() {
+        return "templateFilename='" + templateFilename + '\'' +
+                ", templateSheet=" + templateSheet +
+                ", extractDetails=" + extractDetails;
+    }
 }
