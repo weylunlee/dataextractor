@@ -7,6 +7,7 @@ public class ExtractDetailConfig {
     private int valueRowOffset;
     private int valueColStart;
     private int valueColLength;
+    private int templateSheet;
     private int templateRow;
     private int templateCol;
 
@@ -58,6 +59,14 @@ public class ExtractDetailConfig {
         this.valueColLength = valueColLength;
     }
 
+    public int getTemplateSheet() {
+        return templateSheet;
+    }
+
+    public void setTemplateSheet(int templateSheet) {
+        this.templateSheet = templateSheet;
+    }
+
     public int getTemplateRow() {
         return templateRow;
     }
@@ -82,6 +91,7 @@ public class ExtractDetailConfig {
                 ", valueRowOffset=" + valueRowOffset +
                 ", valueColStart=" + valueColStart +
                 ", valueColLength=" + valueColLength +
+                ", templateSheet=" + templateSheet +
                 ", templateRow=" + templateRow +
                 ", templateCol=" + templateCol +
                 '}';

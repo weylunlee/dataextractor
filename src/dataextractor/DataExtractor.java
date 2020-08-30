@@ -50,9 +50,9 @@ public class DataExtractor {
             }
 
             setValueToTemplate(workbook,
-                    extractConfig.getTemplateSheet(),
-                    extractDetailConfig.getTemplateRow(),
-                    extractDetailConfig.getTemplateCol(),
+                    extractDetailConfig.getTemplateSheet()-1,
+                    extractDetailConfig.getTemplateRow()-1,
+                    extractDetailConfig.getTemplateCol()-1,
                     value);
         }
 
