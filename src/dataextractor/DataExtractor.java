@@ -29,8 +29,6 @@ public class DataExtractor {
     private void extractValueSet(String setFolderName) {
         System.out.println("____________________\nPROCESSING " + setFolderName);
 
-        String xxname = setFolderName + "extractconfig.yaml";
-
         ExtractConfig extractConfig = new ConfigReader().loadConfigAbsolutePath(
                 setFolderName + "extractconfig.yaml", ExtractConfig.class);
 
@@ -67,6 +65,7 @@ public class DataExtractor {
             workbook = new XSSFWorkbook(file);
         }
         catch(Exception e) {
+            System.out.println("ERROR trying to read template " + setFolderName + filename);
             workbook = null;
         }
 
@@ -93,7 +92,7 @@ public class DataExtractor {
             System.out.println("SUCCESSFULLY written out " + filename);
         }
         catch (Exception e) {
-            System.out.println("ERROR: processing folder setFolderName");
+            System.out.println("ERROR: trying to write template " + setFolderName + templateFilename);
         }
     }
 
@@ -132,6 +131,7 @@ public class DataExtractor {
             return Double.valueOf(stringValue);
         }
         catch(Exception e) {
+            System.out.println("ERROR trying to read value " + detailConfig);
             return -999.0;
         }
     }
